@@ -5,6 +5,7 @@ goto updatelinks
 
 
 :updatelinks
+powershell -Command Invoke-WebRequest https://github.com/LuGB18/TOV-Launcher/blob/main/update.tovf -Outfile update.tovfs
 if exist update.tovf goto loadlinks
 if exist tov.ini goto loadtovini
 goto error1
